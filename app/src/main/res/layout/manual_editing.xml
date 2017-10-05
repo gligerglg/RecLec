@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/xhdpi_manual_edit"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="220dp"
+            android:text="Subject"
+            android:textColor="@android:color/holo_green_light" />
+
+        <Spinner
+            android:id="@+id/spin_subjects"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignEnd="@+id/btn_update"
+            android:layout_below="@+id/textView6"
+            android:layout_marginRight="60dp"
+            android:layout_marginStart="30dp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView6"
+            android:layout_below="@+id/spin_subjects"
+            android:layout_marginTop="20dp"
+            android:text="Total Attendence"
+            android:textColor="@android:color/holo_green_light" />
+
+        <EditText
+            android:id="@+id/txt_att_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/spin_subjects"
+            android:layout_below="@+id/spin_subjects"
+            android:layout_marginLeft="150dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="18dp"
+            android:digits="0123456789"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="0"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView7"
+            android:layout_below="@+id/txt_att_update"
+            android:layout_marginTop="25dp"
+            android:text="Total Days"
+            android:textColor="@android:color/holo_green_light" />
+
+        <EditText
+            android:id="@+id/txt_tot_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txt_att_update"
+            android:layout_below="@+id/txt_att_update"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="14dp"
+            android:digits="0123456789"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="0"
+
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_tot_update"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="30dp"
+            android:background="@android:color/holo_green_light"
+            android:text="Update"
+            android:textAllCaps="false"
+            android:textColor="#000000" />
+
+    </RelativeLayout>
+</LinearLayout>
